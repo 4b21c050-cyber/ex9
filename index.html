@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex9</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/6/w3.css">
+<style>
+  .section-title-gray {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+	
+  }
+
+  .section-title-gray::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 28px;
+    background-color: #333333;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+ 
+</style>
+</head>
+<body class="w3-content" style="max-width:1500px">
+
+
+<!-- Navbar (Sits on top) -->
+<div class="w3-flex w3-top w3-black w3-wide w3-padding w3-card">
+  <a href="#home" class="w3-button">
+    <b>BR</b> Architects
+  </a>
+  <nav class="w3-flex w3-hide-small" style="margin-left:auto">
+    <a href="#projects" class="w3-button" >Projects</a>
+    <a href="#about" class="w3-button">About</a>
+    <a href="#contact" class="w3-button">Contact</a>
+  </nav>
+</div>
+
+<!-- Header -->
+<header id="home" class="w3-display-container ">
+<div style="position:absolute; inset:0; background:rgba(0,0,0,0.1); pointer-events:none;"></div>
+  <img src="https://www.w3schools.com/w3images/architect.jpg" alt="Architecture" style="width:100%">
+  <div class="w3-display-middle">
+    <h1 class="w3-text-white w3-wide">
+      <span class="w3-hide-small w3-text-black"><b>BR</b></span>
+      <span class="w3-padding w3-black w3-opacity-min">Architects</span>
+	  
+    </h1>
+  </div>
+</header>
+
+<!-- Projects -->
+<section id="projects" class="w3-container w3-padding-32">
+
+<h2 class="w3-border-bottom w3-border-dark-grey  w3-padding-16 section-title-gray" style="font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;" >Projects</h2>
+
+<div class="w3-grid w3-grayscale"
+style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+
+  <div class="w3-display-container">
+    <div class="w3-display-bottomleft w3-black w3-padding">Summer House</div>
+    <img src="https://www.w3schools.com/w3images/house5.jpg"
+    style="width:100%" alt="Summer House">
+  </div>
+
+  <div class="w3-display-container">
+    <div class="w3-display-bottomleft w3-black w3-padding">Brick House</div>
+    <img src="https://www.w3schools.com/w3images/house2.jpg"
+    style="width:100%" alt="Brick House">
+  </div>
+
+  <div class="w3-display-container">
+    <div class="w3-display-bottomleft w3-black w3-padding">Renovated</div>
+    <img src="https://www.w3schools.com/w3images/house3.jpg"
+    style="width:100%" alt="Renovated House">
+  </div>
+
+  <div class="w3-display-container">
+    <div class="w3-display-bottomleft w3-black w3-padding">Barn House</div>
+    <img src="https://www.w3schools.com/w3images/house4.jpg"
+    style="width:100%" alt="Barn House">
+  </div>
+
+</div>
+</section>
+
+<!-- About -->
+<section id="about" class="w3-container w3-padding-32">
+<h2 class="w3-border-bottom w3-border-dark-grey  w3-padding-16 section-title-gray" style="font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;">About</h2>
+
+<div class="w3-grid " style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px">
+  <div>
+    <img src="https://www.w3schools.com/w3images/team2.jpg" alt="John" style="width:100%">
+    <div class="w3-flex" style="align-items:baseline; justify-content:space-between; gap:8px;">
+    <h3 style="margin:10px 0; font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;">John Doe</h3>
+    <p class="w3-opacity" style="margin:10px 0;">CEO &amp; Founder</p>
+  </div>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  </div>
+
+  <div>
+    <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Jane" style="width:100%">
+    <div class="w3-flex" style="align-items:baseline; justify-content:space-between; gap:8px;">
+      <h3 style="margin:10px 0; font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;">Jane Doe</h3>
+      <p class="w3-opacity" style="margin:10px 0;">Architect</p>
+    </div>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  </div>
+  
+  <div>
+    <img src="https://www.w3schools.com/w3images/team3.jpg" alt="Mike" style="width:100%">
+   <div class="w3-flex" style="align-items:baseline; justify-content:space-between; gap:8px;">
+      <h3 style="margin:10px 0; font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;">Mike Ross</h3>
+      <p class="w3-opacity" style="margin:10px 0;">Architect</p>
+    </div>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  </div>
+  
+  <div>
+    <img src="https://www.w3schools.com/w3images/team4.jpg" alt="Dan" style="width:100%">
+    <div class="w3-flex" style="align-items:baseline; justify-content:space-between; gap:8px;">
+      <h3 style="margin:10px 0; font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;">Dan Star</h3>
+      <p class="w3-opacity" style="margin:10px 0;">Architect</p>
+    </div>
+    <p>Phasellus eget enim eu lectus faucibus vestibulum.</p>
+    <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+  </div>
+
+</div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="w3-container w3-padding-32">
+<h2 class="w3-border-bottom w3-border-dark-grey w3-padding-16 section-title-gray" style="font-family: 'Microsoft JhengHei', 'PingFang TC', Arial, sans-serif; font-weight: 700;">Contact</h2>
+<p>Let's get in touch and talk about your next project.</p>
+
+<form action="/action_page.php" target="_blank">
+  <input class="w3-input w3-section w3-border" type="text"
+  placeholder="Name" required name="Name">
+
+  <input class="w3-input w3-section w3-border" type="email"
+  placeholder="Email" required name="Email">
+
+  <input class="w3-input w3-section w3-border" type="text"
+  placeholder="Subject" required name="Subject">
+
+  <input class="w3-input w3-section w3-border" type="text"
+  placeholder="Comment" required name="Comment">
+
+  <button class="w3-button w3-black w3-section  w3-right" type="submit">
+    SEND MESSAGE
+  </button>
+</form>
+</section>
+<div style="overflow:hidden;">
+  <img src="https://www.w3schools.com/w3images/map.jpg" alt="Map"
+    style="width:100%; display:block; transition:transform 0.15s ease-out;"
+    onmousemove="const r=this.getBoundingClientRect(); const x=((event.clientX-r.left)/r.width)*100; const y=((event.clientY-r.top)/r.height)*100; this.style.transformOrigin=x+'% '+y+'%'; this.style.transform='scale(1.8)';"
+    onmouseleave="this.style.transform='scale(1)'; this.style.transformOrigin='center center';">
+</div>
+
+<footer class="w3-center w3-black w3-container">
+<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
